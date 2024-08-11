@@ -10,8 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600;800&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
+	<h1>Pomodoro Timer</h1>
+	<div class="display">
+		<div class="block">
+			<p class="title work-title">Work</p>
+			<p class="timer work-time">30:00</p>
+		</div>
 
-    
+		<div class="block">
+			<p class="title break-title">Break</p>
+			<p class="timer break-time">5:00</p>
+		</div>
+	</div>
+
+	<div class="btns-container">
+		<button class="btn toggle-time-btn" data-toggle="play">
+			<img src="assets/play.svg" alt="icon play">
+		</button>
+		<button class="btn reset-btn">
+			<img src="assets/reset.svg" alt="icon reset">
+		</button>
+	</div>
+
+	<p class="cycles">Cycle(s) : 0</p>
+
     <script src="app.js"></script>
   </body>
 </html>
